@@ -1,0 +1,3 @@
+The exception appears because the user is allowed to enter any input. 
+To solve the problem, It's needed to add validation in order to prevent incorrect input.
+User has to be allowed to enter only: "<number1><operator>number2"
