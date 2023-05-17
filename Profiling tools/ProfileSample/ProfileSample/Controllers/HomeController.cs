@@ -15,22 +15,11 @@ namespace ProfileSample.Controllers
         {
             var context = new ProfileSampleEntities();
 
-            var sources = context.ImgSources.Take(20).Select(x => x.Id);
-
-            var model = new List<ImageModel>();
-
-            foreach (var id in sources)
+            var model = context.ImgSources.AsNoTracking().Take(20).Select(s => new ImageModel
             {
-                var item = context.ImgSources.Find(id);
-
-                var obj = new ImageModel()
-                {
-                    Name = item.Name,
-                    Data = item.Data
-                };
-
-                model.Add(obj);
-            }
+                Name = s.Name,
+                Data = s.Data
+            }).ToList();
 
             return View(model);
         }
@@ -56,9 +45,9 @@ namespace ProfileSample.Controllers
                         };
 
                         context.ImgSources.Add(entity);
-                        context.SaveChanges();
                     }
-                } 
+                }
+                context.SaveChangesAsync();
             }
 
             return RedirectToAction("Index");
