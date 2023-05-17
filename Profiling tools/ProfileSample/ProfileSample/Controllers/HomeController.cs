@@ -15,7 +15,7 @@ namespace ProfileSample.Controllers
         {
             var context = new ProfileSampleEntities();
 
-            var model = context.ImgSources.Take(20).Select(s => new ImageModel
+            var model = context.ImgSources.AsNoTracking().Take(20).Select(s => new ImageModel
             {
                 Name = s.Name,
                 Data = s.Data
@@ -45,9 +45,9 @@ namespace ProfileSample.Controllers
                         };
 
                         context.ImgSources.Add(entity);
-                        context.SaveChanges();
                     }
-                } 
+                }
+                context.SaveChangesAsync();
             }
 
             return RedirectToAction("Index");
