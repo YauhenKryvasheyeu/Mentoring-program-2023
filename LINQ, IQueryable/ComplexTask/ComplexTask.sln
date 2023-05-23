@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLQueryProvider", "SQLQueryProvider\SQLQueryProvider.csproj", "{F39F7460-0F97-4D6E-A471-EF8C75C923AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLQuryProvider.Test", "SQLQuryProvider.Test\SQLQuryProvider.Test.csproj", "{716228F5-DE1A-4080-9949-825FC9A5B131}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F39F7460-0F97-4D6E-A471-EF8C75C923AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F39F7460-0F97-4D6E-A471-EF8C75C923AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F39F7460-0F97-4D6E-A471-EF8C75C923AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F39F7460-0F97-4D6E-A471-EF8C75C923AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{716228F5-DE1A-4080-9949-825FC9A5B131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{716228F5-DE1A-4080-9949-825FC9A5B131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{716228F5-DE1A-4080-9949-825FC9A5B131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{716228F5-DE1A-4080-9949-825FC9A5B131}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21656EA3-B24D-422F-AEF4-F304F77EC855}
+	EndGlobalSection
+EndGlobal
